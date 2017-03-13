@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-    <div class="container">
-      <p>Welcome to your life.</p>
+  <body ng-app="app">
+    <div ng-controller="ButtonController" class="container">
+      <button ng-click="addLike()">{{likes}} {{like}}</button>
+      <button ng-click="toggleLike()">Toggle</button>
     </div>
     <script src="js/bundle.js"></script>
   </body>
